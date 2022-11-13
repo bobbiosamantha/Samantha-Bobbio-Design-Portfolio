@@ -4,8 +4,9 @@ Primary Color (Blue): #05676e;
 Secondary Color (Green): #489c79;
 */
 
-
-/*default body settings*/
+* {
+  box-sizing: border-box;
+}
 
 body {
   background-color: #BEB1B1;
@@ -15,118 +16,89 @@ body {
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #292525;
 }
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: white;
+}
+
+.container {
+  padding: 8px 32px;
+}
+
+.row {
+  margin: 24px 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.logo {
+  max-width: 250px;
+}
+
 header {
-  background-color: #ff44c4;
-  padding-top: 10px;
-  padding-right: 5px;
-  padding-bottom: 15px;
-  padding-left: 5px;
-  margin: 10px;
-  border-bottom: 3px solid #4a4a4a;
+  background-color: #BEB1B1;
+  text-align: center;
+  padding: 16px px;
+  position: fixed;
+  width: 100%;
 
+  -webkit-box-shadow: 0px 3px 28px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px 3px 28px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px 3px 28px 0px rgba(50, 50, 50, 0.75);
 }
 
-
-h1, h2, h3, h4 {
-  line-height: 1.4;
-}
-
-h1 {
-  font-size: 2.75em;
-  font-weight: 700;
-}
-
-h2 {
-  font-size: 2.25em;
-  font-weight: 700;
-}
-
-h3 {
-  font-size: 1.75em;
-  font-weight: 400;
-}
-
-h4 {
-  font-size: 1.35em;
-  font-weight: 400;
-}
-
-
-/*setting images to full-width*/
-
-img {
+nav {
+  display: inline-block;
   width: 100%;
 }
 
-
-/*change the default link color to your primary color (copied from your comments at the top of the document)*/
-
-a {
-  color: #ffffff;
-  text-decoration: none; /* No underlining */
-}
-a:hover {
-  color: #5D3B3B;
-  text-decoration: none; /* Underlining when hovering over a link */
+nav > ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-/*set the visited and active states of your links*/
-
-a:visited { /* visited link */
-  color: #5D3B3B;
-}
-a:active { /* selected link */
-  color: #ffffff;
+nav > ul > li {
+  display: inline-block;
 }
 
-/*Pseudo classes for Accessibility for Across the Web*/
-a:hover,
-a:focus {
-  color: #FFFFFF;
-  text-decoration: underline;
-}
-
-
-/*CSS code for the button class*/
-.button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #;
-  color: #ffffff; /* needed to override the default link color */
-  font-weight: 400;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #5D3B3B; /* width of the border, type, color */
-  transition: 0.2s opacity;
-}
-
-/*button class hover and active state*/
-.button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
-  text-decoration: none;
-}
-
-.button:active {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
-  text-decoration: none;
-}
-
-
-/*button rules for the mailto button*/
-.button.contact {
-  background-color: transparent;
-  color: #5D3B3B;
+nav > ul > li > a {
+  padding: 0 16px;
   text-transform: uppercase;
-  border: 2px solid #FFFFFF;
+  font-weight: 700;
+  color: #4a4a4a;
+  text-decoration: none;
 }
 
-/*button class hover and active state*/
-
-.button.contact:hover {
-  background-color: #FFFFFF;
-  color: #FFFFFF;
-}
-
-.button.contact:active {
-  background-color: #FFFFFF;
+nav > ul > li > a:hover {
+  text-decoration: none;
   color: #ffffff;
+}
+
+#hero {
+  background-color: #BEB1B1;
+  padding: 24px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#hero h1 {
+  margin: 0;
+}
+
+main {
+  padding-top: 160px;
+}
+
+#work {
+  background-color: #A09090;
 }
