@@ -5,6 +5,7 @@
     <meta name="author" content="Samantha Bobbio">
     <meta name="description" content="Sample meta description - index page.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/ab1d83e3cd.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,23 +14,21 @@
     <title>Samantha Bobbio | Product Design</title>
   </head>
   <body>
-    <script>
-  alert("Hello, Welcome To My Website!");
-</script>
     <!-- For the header -->
   	<header>
   		<!-- For the navigation -->
   		<div class="container">
-              <a href="index.html">
-  			 <img src="img/logo/logo.png" alt="Logo" >
-              </a>
-              <nav>
-                <ul>
-                  <li><a href="index.html">Work</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="#contact">Contact</a></li>
-                </ul>
-              </nav>
+        <div class="navtoggle" id="myNavtoggle">
+          <img class="logo" src="img/logo/logo.png" alt="Logo" >
+          <nav>
+            <ul>
+              <li><a href="index.html">Work</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+              <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa fa-bars"></i></a></li>
+            </ul>
+          </nav>
+          </div>
   		</div>
   	</header>
 
@@ -141,6 +140,7 @@
           <p>Copyright Samantha Bobbio 2022</p>
         </div>
   	</footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
   </body>
 </html>
