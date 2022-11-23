@@ -3,7 +3,6 @@ Colors used:
 Primary Color (Blue): #05676e;
 Secondary Color (Green): #489c79;
 */
-
 * {
   box-sizing: border-box;
 }
@@ -11,9 +10,12 @@ Secondary Color (Green): #489c79;
 body {
   background-color: #BEB1B1;
   font-family: 'Poppins', sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  font-weight: 300;
+  /* Sets the font weight to 300 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
   color: #292525;
 }
 
@@ -61,21 +63,20 @@ nav {
   width: 100%;
 }
 
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   padding: 0 16px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #4a4a4a;
   text-decoration: none;
 }
 
-nav > ul > li > a:hover {
+nav>ul>li>a:hover {
   text-decoration: none;
   color: #ffffff;
 }
@@ -95,13 +96,14 @@ nav > ul > li > a:hover {
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-.navtoggle.responsive li  {
+
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
   border-top: 1px solid white;
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
@@ -124,17 +126,18 @@ nav > ul > li > a:hover {
   margin: 0;
 }
 
-#work {
-  background-color: #A09090;
-}
-
 .yellow {
   animation: 4s color-change infinite alternate linear;
 }
 
 @keyframes color-change {
-  from {fill: #edc655;}
-  to {fill: #f76414;}
+  from {
+    fill: #edc655;
+  }
+
+  to {
+    fill: #f76414;
+  }
 }
 
 /* ==============================
@@ -145,13 +148,12 @@ Medium devices (640px and larger)
     position: fixed;
     text-align: unset;
     padding: 20px 0 13px;
-
     -webkit-box-shadow: 0px 3px 28px 0px rgba(50, 50, 50, 0.75);
-    -moz-box-shadow:    0px 3px 28px 0px rgba(50, 50, 50, 0.75);
-    box-shadow:         0px 3px 28px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 0px 3px 28px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 0px 3px 28px 0px rgba(50, 50, 50, 0.75);
   }
 
-  nav > ul > li {
+  nav>ul>li {
     display: inline-block;
   }
 
@@ -181,9 +183,16 @@ Medium devices (640px and larger)
     padding-top: 160px;
   }
 
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
   img {
-    width: auto;
-    max-width: 50%;
+    width: 100%;
+    max-width: 100%;
   }
 
   nav {
@@ -192,7 +201,7 @@ Medium devices (640px and larger)
     margin-top: 4px;
   }
 
-  nav > ul {
+  nav>ul {
     margin: 1em 0;
   }
 
@@ -230,11 +239,9 @@ Large devices (1024px or larger)
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
-}
+@media only screen and (min-width: 1440px) {}
 
 /* ==============================
 Extra-large devices (1920px or larger)
 ================================= */
-@media only screen and (min-width: 1920px) {
-}
+@media only screen and (min-width: 1920px) {}
